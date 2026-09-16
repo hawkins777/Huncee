@@ -1,0 +1,182 @@
+body {
+    background: linear-gradient(135deg, #d6d6d6, #999b99, #1f1f1f);
+    color:rgb(8, 8, 8);
+}
+.pres {
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 5px;
+    width: 290px;
+}
+.logo {
+    width: 200px;
+    border-radius: 20px;
+    border: 3px solid #2e569e;
+    box-shadow: 0 0 20px #2e569e;
+    transition: 0.3s;
+}
+.logo:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px #a5ebae;
+}
+.logo1 {
+    width: 200px;
+    border-radius: 20px;
+    border: 3px solid #d6250e;
+    box-shadow: 0 0 20px #ff1201;
+    transition: 0.3s;
+}
+.logo1:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px #9df0b6;
+}/* SNAKE GAME */
+
+.snake-game {
+    text-align: center;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+.snake-game h1 {
+    color: #00ff66;
+    letter-spacing: 4px;
+    text-shadow: 0 0 12px #00ff66;
+}
+
+.controls {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.controls b {
+    display: inline-block;
+    padding: 5px 8px;
+    margin: 3px;
+
+    background: #222;
+    color: white;
+
+    border-radius: 5px;
+}
+
+.score {
+    margin: 12px;
+    color: white;
+    font-size: 20px;
+}
+
+#snakeCanvas {
+    display: block;
+    margin: auto;
+
+    background: #080808;
+
+    border: 3px solid #00ff66;
+    border-radius: 10px;
+
+    box-shadow: 0 0 20px #00ff66;
+}
+
+#snakeStart {
+    margin-top: 15px;
+
+    padding: 10px 25px;
+
+    background: #00aa44;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#snakeStart:hover {
+    background: #00dd55;
+    box-shadow: 0 0 15px #00ff66;
+}
+
+
+/* DEATH VIDEO POPUP */
+
+#deathPopup {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.9);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.deathBox {
+    position: relative;
+
+    width: 650px;
+    max-width: 90%;
+
+    padding: 20px;
+
+    background: #151515;
+
+    border: 2px solid #ff3333;
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 0 30px #ff3333;
+}
+
+.deathBox h2 {
+    color: #ff3333;
+    margin-top: 0;
+}
+
+.deathBox p {
+    color: white;
+}
+
+#deathVideo {
+    width: 100%;
+    max-height: 450px;
+
+    border-radius: 8px;
+}
+
+#closeDeath {
+    position: absolute;
+
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    background: #ff3333;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+#closeDeath:hover {
+    background: #ff6666;
+}
